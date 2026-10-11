@@ -213,14 +213,14 @@ export const AboutScreen: React.FC = () => {
             <Text
               style={styles.legalLink}
               onPress={() =>
-                Linking.openURL('https://pocketpal.dev/privacy-policy')
+                Linking.openURL('https://github.com/smartworldarafath/Local-LLM')
               }>
               {l10n.about.privacyPolicy}
             </Text>
             <Text style={styles.legalSeparator}>·</Text>
             <Text
               style={styles.legalLink}
-              onPress={() => Linking.openURL('https://pocketpal.dev/terms')}>
+              onPress={() => Linking.openURL('https://github.com/smartworldarafath/Local-LLM')}>
               {l10n.about.termsOfService}
             </Text>
           </View>

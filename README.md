@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/images and logos/PocketPal-512x512.png" alt="Local LLM logo" width="120" />
+<img src="assets/images and logos/LocalLLM-512x512.png" alt="Local LLM logo" width="120" />
 
 # Local LLM
 
