@@ -106,11 +106,11 @@ The output APK will be generated at `android/app/build/outputs/apk/prod/release/
 
 ---
 
-## 👨‍💻 Developer & Contact
+## 👨‍💻 Author & Sole Contributor
 
-- **Developer**: Arafath Rahman
+- **Developer & Maintainer**: **Arafath Rahman** ([@smartworldarafath](https://github.com/smartworldarafath))
 - **Email**: [arafathrahman711@gmail.com](mailto:arafathrahman711@gmail.com)
-- **GitHub**: [@smartworldarafath](https://github.com/smartworldarafath)
+- **GitHub Profile**: [https://github.com/smartworldarafath](https://github.com/smartworldarafath)
 - **Repository**: [https://github.com/smartworldarafath/Local-LLM](https://github.com/smartworldarafath/Local-LLM)
 
 ---

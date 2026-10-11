@@ -2,6 +2,12 @@
   "name": "local-llm",
   "version": "1.2.0",
   "private": true,
+  "author": "Arafath Rahman <arafathrahman711@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smartworldarafath/Local-LLM.git"
+  },
+  "homepage": "https://github.com/smartworldarafath/Local-LLM",
   "scripts": {
     "prepare": "husky",
     "postinstall": "./scripts/postinstall.sh",
