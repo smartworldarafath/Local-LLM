@@ -10,10 +10,6 @@
 
 *Chat with cutting-edge open-weight LLMs, customize your experience, and stay in total control of your data — completely on-device. No subscriptions, no cloud tracking, and zero internet required.*
 
-<br>
-
-<img src="assets/images%20and%20logos/Feature_graphic_Google_Play.png" alt="Local LLM is a private, offline AI assistant running entirely on your mobile device powered by llama.cpp and open-weight models." width="100%">
-
 <br><br>
 
 <p align="center">
