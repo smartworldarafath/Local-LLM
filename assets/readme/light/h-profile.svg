@@ -14,7 +14,7 @@
       <g transform="translate(-18, -18) scale(1.5)"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" fill="#002111"/></g>
     </g>
     <text x="114" y="47" font-family="system-ui, -apple-system, 'Google Sans', Roboto, sans-serif" font-size="32" font-weight="700" fill="#211824">My Profile</text>
-    <text x="114" y="74" font-family="system-ui, -apple-system, Roboto, sans-serif" font-size="15" font-weight="400" fill="#675466">Avatar personalization, storage strategies & chat history privacy</text>
+    <text x="114" y="74" font-family="system-ui, -apple-system, Roboto, sans-serif" font-size="15" font-weight="400" fill="#675466">Avatar personalization, storage strategies &amp; chat history privacy</text>
     <g transform="translate(872, 36)">
         <rect width="98" height="32" rx="16" fill="#ddcedd"/>
         <text x="49" y="20.5" font-family="system-ui, -apple-system, Roboto, sans-serif" font-size="13" font-weight="700" fill="#221824" text-anchor="middle">Retention</text>

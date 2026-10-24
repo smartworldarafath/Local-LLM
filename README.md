@@ -1,6 +1,18 @@
 <div align="center">
 
-<img src="assets/images and logos/Feature_graphic_Google_Play.png" alt="Local LLM is a private, offline AI assistant running entirely on your mobile device powered by llama.cpp and open-weight models." width="100%">
+<p align="center">
+  <img src="assets/images%20and%20logos/LocalLLM-512x512.png" alt="Local LLM logo" width="130" />
+</p>
+
+# Local LLM
+
+**A private, offline AI assistant running entirely on your mobile device.**
+
+*Chat with cutting-edge open-weight LLMs, customize your experience, and stay in total control of your data — completely on-device. No subscriptions, no cloud tracking, and zero internet required.*
+
+<br>
+
+<img src="assets/images%20and%20logos/Feature_graphic_Google_Play.png" alt="Local LLM is a private, offline AI assistant running entirely on your mobile device powered by llama.cpp and open-weight models." width="100%">
 
 <br><br>
 
@@ -24,6 +36,43 @@
 </p>
 
 </div>
+
+
+
+---
+
+<div align="center">
+
+## 📸 Interface & Capabilities Preview
+
+<table>
+  <tr>
+    <td align="center" width="25%" valign="top">
+      <img src="assets/images%20and%20logos/Chat.png" alt="On-Device Local Chat" width="220" style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);" /><br><br>
+      <b>💬 Private Chat</b><br>
+      <sub>Stream tokens locally with zero cloud connection or telemetry.</sub>
+    </td>
+    <td align="center" width="25%" valign="top">
+      <img src="assets/images%20and%20logos/Download_models.png" alt="Model Downloader" width="220" style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);" /><br><br>
+      <b>📥 Model Hub</b><br>
+      <sub>Qwen, Llama 3.2, DeepSeek, Gemma 2, Mistral, and Phi-3.5.</sub>
+    </td>
+    <td align="center" width="25%" valign="top">
+      <img src="assets/images%20and%20logos/Benchmark.png" alt="Hardware Benchmark" width="220" style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);" /><br><br>
+      <b>⚡ Hardware Benchmark</b><br>
+      <sub>Granular CPU threads, GPU layers (OpenCL/Metal), and tokens/sec.</sub>
+    </td>
+    <td align="center" width="25%" valign="top">
+      <img src="assets/images%20and%20logos/Pals.png" alt="Custom AI Pals" width="220" style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);" /><br><br>
+      <b>🎭 AI Personas (Pals)</b><br>
+      <sub>Custom system prompts, roleplay personalities, and memory.</sub>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+---
 
 <h3 id="overview"><picture><source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="assets/readme/dark/hm-overview.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/h-overview.svg"><source media="(max-width: 640px)" srcset="assets/readme/light/hm-overview.svg"><img src="assets/readme/light/h-overview.svg" alt="Overview: Private, on-device AI assistant powered by open-weight models" width="100%"></picture></h3>
 
