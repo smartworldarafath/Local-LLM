@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>README Preview - Local LLM (Material 3 Expressive)</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --text: #c9d1d9;
+      --border: #30363d;
+      --card-bg: #161b22;
+      --link: #58a6ff;
+    }
+    html[data-theme="light"] {
+      --bg: #ffffff;
+      --text: #24292f;
+      --border: #d0d7de;
+      --card-bg: #f6f8fa;
+      --link: #0969da;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: background-color 0.2s, color 0.2s;
+    }
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      width: 100%;
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+    }
+    .toolbar-title {
+      font-weight: 700;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .theme-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 8px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 13px;
+      transition: all 0.2s;
+    }
+    .theme-toggle:hover {
+      background: var(--border);
+    }
+    .container {
+      width: 100%;
+      max-width: 980px;
+      padding: 32px 24px 64px 24px;
+      box-sizing: border-box;
+      line-height: 1.6;
+    }
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    h1, h2, h3, h4 {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      margin-top: 28px;
+    }
+    table {
+      border-collapse: collapse;
+      margin: 16px 0;
+      width: 100%;
+    }
+    table, th, td {
+      border: 1px solid var(--border);
+    }
+    th, td {
+      padding: 10px 14px;
+    }
+    pre {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      overflow-x: auto;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 85%;
+      background: rgba(175, 184, 193, 0.2);
+      padding: 0.2em 0.4em;
+      border-radius: 6px;
+    }
+    pre code {
+      background: none;
+      padding: 0;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    p {
+      margin: 14px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <div class="toolbar-title">
+      <span>📱 Local LLM — Google Pixel M3E README Preview</span>
+    </div>
+    <button class="theme-toggle" id="toggleTheme">Switch to Light Theme</button>
+  </div>
+  <div class="container">
+    <div align="center">
+
+<img src="assets/images and logos/Feature_graphic_Google_Play.png" alt="Local LLM is a private, offline AI assistant running entirely on your mobile device powered by llama.cpp and open-weight models." width="100%">
+
+<br><br>
+
+<p align="center">
+<a href="https://github.com/smartworldarafath/Local-LLM/releases/tag/v1.2.0"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/btn-download.svg"><img src="assets/readme/light/btn-download.svg" alt="Download Release APK" height="50"></picture></a>
+<a href="https://github.com/smartworldarafath/Local-LLM"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/btn-github.svg"><img src="assets/readme/light/btn-github.svg" alt="Local LLM Source Code" height="50"></picture></a>
+<a href="#support"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/btn-sponsor.svg"><img src="assets/readme/light/btn-sponsor.svg" alt="Support Local LLM" height="50"></picture></a>
+<a href="#models"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/btn-models.svg"><img src="assets/readme/light/btn-models.svg" alt="Explore Open-Weight Models" height="50"></picture></a>
+</p>
+
+<p align="center">
+<a href="#overview" title="100% Offline & On-Device Execution"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/badge-offline.svg"><img src="assets/readme/light/badge-offline.svg" alt="100% Offline" height="28"></picture></a>
+<a href="https://github.com/smartworldarafath/Local-LLM/releases/tag/v1.2.0" title="Latest Stable Release v1.2.0"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/badge-version.svg"><img src="assets/readme/light/badge-version.svg" alt="v1.2.0 Release" height="28"></picture></a>
+<a href="#stack" title="Native Android & iOS Support"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/badge-platform.svg"><img src="assets/readme/light/badge-platform.svg" alt="Android & iOS" height="28"></picture></a>
+<a href="https://github.com/ggerganov/llama.cpp" target="_blank" rel="noopener noreferrer" title="llama.cpp High-Performance C++ Inference"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/badge-engine.svg"><img src="assets/readme/light/badge-engine.svg" alt="llama.cpp Core" height="28"></picture></a>
+<a href="#models" title="Qwen, Gemma, Llama, DeepSeek, Phi, SmolLM & Mistral"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/badge-models.svg"><img src="assets/readme/light/badge-models.svg" alt="Open-Weight LLMs" height="28"></picture></a>
+<a href="#hardware" title="GPU Layer Offloading via OpenCL & Metal"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/badge-gpu.svg"><img src="assets/readme/light/badge-gpu.svg" alt="GPU Acceleration" height="28"></picture></a>
+<a href="#overview" title="Zero Telemetry · Zero Cloud Routing"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/badge-privacy.svg"><img src="assets/readme/light/badge-privacy.svg" alt="Zero Cloud Data" height="28"></picture></a>
+<a href="LICENSE" title="MIT License (100% Free & Open Source)"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/badge-mit.svg"><img src="assets/readme/light/badge-mit.svg" alt="MIT License" height="28"></picture></a>
+<a href="https://github.com/smartworldarafath/Local-LLM/pulls" title="Pull Requests Welcome!"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/badge-prs.svg"><img src="assets/readme/light/badge-prs.svg" alt="PRs Welcome" height="28"></picture></a>
+</p>
+
+</div>
+
+<h3 id="overview"><picture><source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="assets/readme/dark/hm-overview.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/h-overview.svg"><source media="(max-width: 640px)" srcset="assets/readme/light/hm-overview.svg"><img src="assets/readme/light/h-overview.svg" alt="Overview: Private, on-device AI assistant powered by open-weight models" width="100%"></picture></h3>
+
+<strong>Local LLM</strong> is a private, fully offline AI assistant engineered to run cutting-edge open-weight large language models directly on your smartphone (Android & iOS).
+
+By fusing <strong>llama.cpp</strong>'s C++ quantization engine with native hardware backends (OpenCL for Qualcomm Adreno GPUs, Metal for Apple Silicon, and multi-core CPU threading), Local LLM lets you chat, analyze documents, and experiment with world-class LLMs anywhere — with <strong>zero subscriptions, zero server dependencies, and zero telemetry</strong>.
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/card-offline.svg">
+        <img src="assets/readme/light/card-offline.svg" alt="100% Offline & Private" width="100%">
+      </picture>
+    </td>
+    <td width="50%" align="center">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/card-models.svg">
+        <img src="assets/readme/light/card-models.svg" alt="Open-Weight Models" width="100%">
+      </picture>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/card-hardware.svg">
+        <img src="assets/readme/light/card-hardware.svg" alt="Hardware Acceleration" width="100%">
+      </picture>
+    </td>
+    <td width="50%" align="center">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/card-theming.svg">
+        <img src="assets/readme/light/card-theming.svg" alt="M3 Expressive Theming" width="100%">
+      </picture>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/card-benchmark.svg">
+        <img src="assets/readme/light/card-benchmark.svg" alt="Device Benchmark Studio" width="100%">
+      </picture>
+    </td>
+    <td width="50%" align="center">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/card-profile.svg">
+        <img src="assets/readme/light/card-profile.svg" alt="Profile & History Privacy" width="100%">
+      </picture>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<h3 id="features"><picture><source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="assets/readme/dark/hm-features.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/h-features.svg"><source media="(max-width: 640px)" srcset="assets/readme/light/hm-features.svg"><img src="assets/readme/light/h-features.svg" alt="Key Features: Everything packed into Local LLM v1.2.0" width="100%"></picture></h3>
+
+- <strong>🔒 100% Air-Gapped Privacy</strong> — Every prompt, inference token, and message stays strictly on your physical device. No logs, no telemetry, no cloud relays.
+- <strong>🤖 Expanded Model Architecture Matrix</strong> — Instant filters and fast multi-threaded downloads for <strong>Qwen</strong>, <strong>Gemma</strong>, <strong>Meta Llama</strong>, <strong>DeepSeek</strong>, <strong>Microsoft Phi</strong>, <strong>SmolLM</strong>, and <strong>Mistral</strong>.
+- <strong>⚡ Granular CPU & GPU Offloading</strong> — Allocate dedicated CPU core threads and fine-tune GPU layer offload sliders (0–99) to optimize inference speed and battery endurance.
+- <strong>🎨 Dynamic Material 3 Expressive Appearance</strong> — 5 curated aesthetic tonal color palettes (<code>#CDC5B4</code>, <code>#85756E</code>, <code>#95BB9E</code>, <code>#B8A5D6</code>, <code>#9397CC</code>) with a one-tap <strong>Reset</strong> button to restore defaults.
+- <strong>📱 Realistic Device Benchmark Mockup</strong> — Samsung "About Phone" style hardware inspection overview displaying chipset topology, memory headroom, GPU driver status, and live generation speed.
+- <strong>👤 'My Profile' Management</strong> — Profile picture personalization (preset avatars, upload, reset), name/email settings, dual storage strategy (<strong>Sign-In</strong> vs <strong>Local Storage</strong>), and chat history controls (<strong>Local</strong> vs <strong>Don't Save</strong>).
+- <strong>💬 Telegram Feedback Loop</strong> — In-app feedback form integrated with the developer's Telegram bot for instant transmission of feature requests and suggestions.
+- <strong>🌐 In-App Multilingual Switching</strong> — Dynamic language selector supporting full app localization with English as the default.
+
+<br>
+
+<h3 id="models"><picture><source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="assets/readme/dark/hm-models.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/h-models.svg"><source media="(max-width: 640px)" srcset="assets/readme/light/hm-models.svg"><img src="assets/readme/light/h-models.svg" alt="Model Families: Leading open-weight LLMs optimized for mobile hardware" width="100%"></picture></h3>
+
+Local LLM natively supports popular <strong>GGUF-quantized</strong> model architectures with automatic parameter detection, context window sizing, and prompt template resolution:
+
+<table width="100%"><thead><tr><th align="left">Model Family</th><th align="left">Developer</th><th align="left">Architecture</th><th align="left">Recommended Quants</th><th align="left">Min. RAM</th><th align="left">Target Use Case</th></tr></thead><tbody><tr><td><strong>Qwen 2.5</strong></td><td>Alibaba Cloud / QwenLM</td><td>Dense Transformer</td><td><code>Q4_K_M</code>, <code>Q5_K_M</code></td><td>4 GB – 8 GB</td><td>General reasoning, code synthesis, multi-turn chat</td></tr><tr><td><strong>Gemma 2 / 3 / 4</strong></td><td>Google DeepMind</td><td>Decoder-only Transformer</td><td><code>Q4_K_M</code>, <code>Q4_0</code></td><td>4 GB – 6 GB</td><td>Creative writing, structured extraction, summarization</td></tr><tr><td><strong>Meta Llama 3.2</strong></td><td>Meta AI</td><td>Dense Transformer</td><td><code>Q4_K_M</code>, <code>Q8_0</code></td><td>4 GB – 8 GB</td><td>Fast mobile assistant, low latency, daily task automation</td></tr><tr><td><strong>DeepSeek-R1 Distill</strong></td><td>DeepSeek AI</td><td>Reasoning Transformer</td><td><code>Q4_K_M</code>, <code>Q5_K_M</code></td><td>6 GB – 12 GB</td><td>Step-by-step mathematical reasoning, deep problem solving</td></tr><tr><td><strong>Microsoft Phi 3.5 / 4</strong></td><td>Microsoft Research</td><td>Compact SLM</td><td><code>Q4_K_M</code>, <code>Q4_K_S</code></td><td>4 GB – 6 GB</td><td>High-efficiency logical reasoning on resource-constrained devices</td></tr><tr><td><strong>SmolLM2</strong></td><td>Hugging Face TB</td><td>Ultra-compact SLM</td><td><code>Q4_K_M</code>, <code>Q8_0</code></td><td>2 GB – 4 GB</td><td>Ultra-fast on-device inference, low memory devices, edge tasks</td></tr><tr><td><strong>Mistral NeMo & 7B</strong></td><td>Mistral AI</td><td>Dense Transformer</td><td><code>Q4_K_M</code>, <code>Q5_K_M</code></td><td>6 GB – 12 GB</td><td>Multilingual comprehension, advanced instruction following</td></tr></tbody></table>
+
+<br>
+
+<h3 id="hardware"><picture><source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="assets/readme/dark/hm-hardware.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/h-hardware.svg"><source media="(max-width: 640px)" srcset="assets/readme/light/hm-hardware.svg"><img src="assets/readme/light/h-hardware.svg" alt="Hardware Acceleration: Granular CPU multithreading and GPU layer offloading" width="100%"></picture></h3>
+
+Maximize token generation throughput and control thermals with hardware controls:
+
+- <strong>CPU Core Thread Tuning</strong>: Allocate optimal compute threads (e.g., 4 to 8 threads) aligned with your device's big.LITTLE core cluster topology.
+- <strong>GPU Layer Offload Slider (0–99)</strong>: Offload model compute layers directly to graphics hardware:
+  - <strong>Android</strong>: Hardware-accelerated OpenCL compute pipelines targeting Qualcomm Adreno and ARM Mali GPUs.
+  - <strong>iOS</strong>: Apple Metal compute pipelines with Unified Memory Architecture (UMA) for high tokens/sec.
+- <strong>Context Length & Cache Quantization</strong>: Granular context sizing (512 to 32,768 tokens) with Flash Attention compatibility and FP16 / Q8 / Q4 KV-cache quantization.
+
+<br>
+
+<h3 id="appearance"><picture><source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="assets/readme/dark/hm-appearance.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/h-appearance.svg"><source media="(max-width: 640px)" srcset="assets/readme/light/hm-appearance.svg"><img src="assets/readme/light/h-appearance.svg" alt="M3E Appearance: 5 curated aesthetic tonal color palettes with instant Reset" width="100%"></picture></h3>
+
+Local LLM features a Material 3 Expressive dynamic themer with 5 curated tonal palettes designed for visual comfort:
+
+<table width="100%"><thead><tr><th align="left">Palette Swatch</th><th align="left">Hex Code</th><th align="left">Aesthetic Style</th><th align="left">Intended Atmosphere</th></tr></thead><tbody><tr><td><img src="https://via.placeholder.com/24/CDC5B4/CDC5B4.png" width="20" height="20" style="border-radius:4px" /></td><td><code>#CDC5B4</code></td><td><strong>Warm Sand</strong></td><td>Minimalist editorial, warm neutral, soft daylight</td></tr><tr><td><img src="https://via.placeholder.com/24/85756E/85756E.png" width="20" height="20" style="border-radius:4px" /></td><td><code>#85756E</code></td><td><strong>Earth Mocha</strong></td><td>Grounded earthy tones, high contrast, warm reading mode</td></tr><tr><td><img src="https://via.placeholder.com/24/95BB9E/95BB9E.png" width="20" height="20" style="border-radius:4px" /></td><td><code>#95BB9E</code></td><td><strong>Sage Garden</strong></td><td>Calming organic green, reduced eye strain, nature-inspired</td></tr><tr><td><img src="https://via.placeholder.com/24/B8A5D6/B8A5D6.png" width="20" height="20" style="border-radius:4px" /></td><td><code>#B8A5D6</code></td><td><strong>Lavender Mist</strong></td><td>Creative lilac, playful expressive vibe, modern pastel</td></tr><tr><td><img src="https://via.placeholder.com/24/9397CC/9397CC.png" width="20" height="20" style="border-radius:4px" /></td><td><code>#9397CC</code></td><td><strong>Slate Blue</strong></td><td>Technical focus, clean oceanic tone, night shift balance</td></tr></tbody></table>
+
+> <strong>Reset to Default</strong>: A dedicated <strong>Reset</strong> button instantly clears custom tonal tokens and reverts to the default Material 3 color system with zero restart required.
+
+<br>
+
+<h3 id="benchmark"><picture><source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="assets/readme/dark/hm-benchmark.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/h-benchmark.svg"><source media="(max-width: 640px)" srcset="assets/readme/light/hm-benchmark.svg"><img src="assets/readme/light/h-benchmark.svg" alt="Device Benchmark: Samsung About Phone inspired hardware specs and telemetry" width="100%"></picture></h3>
+
+The <strong>Benchmark</strong> section incorporates a hardware inspection view inspired by Samsung's "About Phone" design:
+
+- <strong>Chipset & Processor Topology</strong>: Real-time identification of processor cores, clock speeds, and active threads.
+- <strong>RAM Headroom & Consumption</strong>: Visualized bar graph displaying total physical RAM, active runtime footprint, and memory available for model loading.
+- <strong>Inference Speed Tracking</strong>: Exact tokens-per-second (<code>t/s</code>) metrics for Prompt Evaluation (TTFT) and Token Generation across varied quantization depths.
+
+<br>
+
+<h3 id="profile"><picture><source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="assets/readme/dark/hm-profile.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/h-profile.svg"><source media="(max-width: 640px)" srcset="assets/readme/light/hm-profile.svg"><img src="assets/readme/light/h-profile.svg" alt="My Profile: Avatar personalization, storage strategies & chat history privacy" width="100%"></picture></h3>
+
+The <strong>My Profile</strong> suite provides control over your user identity and data lifecycle:
+
+- <strong>Avatar Management</strong>: Select from built-in avatar presets, upload custom profile pictures, or reset to default with smooth animated transitions.
+- <strong>Personal Details</strong>: Manage your display name and optional email contact.
+- <strong>Dual Persistence Strategy</strong>:
+  - <strong>Local Storage</strong>: All settings, palettes, and configurations persist securely in device-encrypted offline storage.
+  - <strong>Sign-In</strong>: Option to authenticate via streamlined email sign-in for cross-session continuity.
+- <strong>Chat History Control</strong>:
+  - <strong>Local</strong>: Conversations are stored locally using indexed on-device databases.
+  - <strong>Don't Save</strong>: Ephemeral mode where chat sessions are flushed from memory immediately upon closing.
+- <strong>Direct Telegram Feedback</strong>: Submit bug reports and feature requests directly to the developer's Telegram bot with zero telemetry metadata attached.
+
+<br>
+
+<h3 id="stack"><picture><source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="assets/readme/dark/hm-stack.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/h-stack.svg"><source media="(max-width: 640px)" srcset="assets/readme/light/hm-stack.svg"><img src="assets/readme/light/h-stack.svg" alt="Tech Stack: High-performance native cross-platform mobile architecture" width="100%"></picture></h3>
+
+<p align="center">
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/pill-reactnative.svg"><img src="assets/readme/light/pill-reactnative.svg" alt="React Native" height="36"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/pill-typescript.svg"><img src="assets/readme/light/pill-typescript.svg" alt="TypeScript" height="36"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/pill-llamacpp.svg"><img src="assets/readme/light/pill-llamacpp.svg" alt="llama.cpp" height="36"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/pill-android.svg"><img src="assets/readme/light/pill-android.svg" alt="Android NDK" height="36"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/pill-metal.svg"><img src="assets/readme/light/pill-metal.svg" alt="Apple Metal" height="36"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/pill-opencl.svg"><img src="assets/readme/light/pill-opencl.svg" alt="OpenCL GPU" height="36"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/pill-mobx.svg"><img src="assets/readme/light/pill-mobx.svg" alt="MobX State" height="36"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/pill-watermelondb.svg"><img src="assets/readme/light/pill-watermelondb.svg" alt="WatermelonDB" height="36"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/pill-material3.svg"><img src="assets/readme/light/pill-material3.svg" alt="Material 3" height="36"></picture>
+</p>
+
+<table width="100%"><thead><tr><th align="left">Component</th><th align="left">Technology</th><th align="left">Role & Purpose</th></tr></thead><tbody><tr><td><strong>Framework</strong></td><td><a href="https://reactnative.dev/">React Native</a> (New Architecture)</td><td>Native UI rendering with TurboModules & Fabric C++ bindings</td></tr><tr><td><strong>Language</strong></td><td><a href="https://www.typescriptlang.org/">TypeScript</a></td><td>Strict static typing across state stores, hooks, and native bridges</td></tr><tr><td><strong>Inference Core</strong></td><td><a href="https://github.com/ggerganov/llama.cpp">llama.cpp</a> via <a href="https://github.com/mybigday/llama.rn"><code>llama.rn</code></a></td><td>Highly optimized C++ GGUF inference engine with low memory footprint</td></tr><tr><td><strong>Hardware Backends</strong></td><td>OpenCL & Apple Metal</td><td>Dedicated GPU layer offloading for Qualcomm Adreno, ARM Mali & Apple Silicon</td></tr><tr><td><strong>State Management</strong></td><td><a href="https://mobx.js.org/">MobX</a> + <code>mobx-persist-store</code></td><td>Reactive state management with atomic observable properties</td></tr><tr><td><strong>Local Persistence</strong></td><td><a href="https://watermelondb.dev/">WatermelonDB</a> & AsyncStorage</td><td>Fast SQLite-backed offline document store for chats and model metadata</td></tr><tr><td><strong>Design System</strong></td><td>Google Material 3 Expressive (M3E)</td><td>Pixel-inspired dynamic palettes, scalloped geometry, and tactile tokens</td></tr></tbody></table>
+
+<br>
+
+<h3 id="start"><picture><source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="assets/readme/dark/hm-start.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/h-start.svg"><source media="(max-width: 640px)" srcset="assets/readme/light/hm-start.svg"><img src="assets/readme/light/h-start.svg" alt="Getting Started: Clone, install dependencies and build release APK from source" width="100%"></picture></h3>
+
+<h3>Prerequisites</h3>
+- <strong>Node.js</strong>: v18.0.0 or higher
+- <strong>Package Manager</strong>: Yarn (recommended)
+- <strong>Android Development</strong>: Android Studio, Android SDK (API 34+), NDK (<code>27.3.13750724</code>), CMake (<code>3.22.1+</code>)
+- <strong>iOS Development</strong>: macOS with Xcode 15+ and CocoaPods
+
+<h3>1. Clone the Repository</h3>
+<pre><code class="language-bash">git clone https://github.com/smartworldarafath/Local-LLM.git
+cd Local-LLM
+</code></pre>
+
+<h3>2. Install Dependencies</h3>
+<pre><code class="language-bash">yarn install
+</code></pre>
+
+<h3>3. Generate Local Pixel SVG Assets (Optional)</h3>
+<pre><code class="language-bash">node scripts/generate-pixel-assets.js
+node scripts/generate-preview-html.js
+</code></pre>
+
+<h3>4. Run the Development Server</h3>
+<pre><code class="language-bash">yarn start:reset
+</code></pre>
+
+<h3>5. Build & Launch on Device</h3>
+
+<h4>Android</h4>
+<pre><code class="language-bash">&lt;h1&gt;Debug Build&lt;/h1&gt;
+yarn android
+
+&lt;h1&gt;Release APK Build&lt;/h1&gt;
+cd android && ./gradlew assembleRelease
+</code></pre>
+The compiled APK will be located at:
+<code>android/app/build/outputs/apk/prod/release/app-prod-release.apk</code>
+
+<h4>iOS</h4>
+<pre><code class="language-bash">cd ios && pod install && cd ..
+yarn ios
+</code></pre>
+
+<br>
+
+<h3 id="support"><picture><source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="assets/readme/dark/hm-support.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/h-support.svg"><source media="(max-width: 640px)" srcset="assets/readme/light/hm-support.svg"><img src="assets/readme/light/h-support.svg" alt="Support & Sponsor: Support continuous development via SupportKori, Payoneer & Coffee" width="100%"></picture></h3>
+
+Local LLM is 100% free, open-source, and developed independently. If you enjoy having private, offline AI on your phone and want to support ongoing development, consider sponsoring:
+
+<div align="center">
+
+<table width="100%"><thead><tr><th align="left">Platform</th><th align="left">Support Link / Identifier</th><th align="left">Accepted Payment Methods</th></tr></thead><tbody><tr><td><strong>SupportKori</strong></td><td><a href="https://www.supportkori.com/arafathrahman">supportkori.com/arafathrahman</a></td><td>bKash, Nagad, Rocket, Visa, Mastercard</td></tr><tr><td><strong>Buy Me a Coffee</strong></td><td><a href="https://buymeacoffee.com/arafathrahman">buymeacoffee.com/arafathrahman</a></td><td>Cards, Apple Pay, Google Pay, PayPal</td></tr><tr><td><strong>GitHub Sponsors</strong></td><td><a href="https://github.com/sponsors/smartworldarafath">github.com/sponsors/smartworldarafath</a></td><td>Monthly / One-time GitHub Sponsorship</td></tr><tr><td><strong>Payoneer</strong></td><td>Email: <code>arafathrahman710@gmail.com</code></td><td>Direct Transfer · Customer ID: <code>70366820</code></td></tr></tbody></table>
+
+</div>
+
+<br>
+
+<h3 id="license"><picture><source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="assets/readme/dark/hm-license.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/readme/dark/h-license.svg"><source media="(max-width: 640px)" srcset="assets/readme/light/hm-license.svg"><img src="assets/readme/light/h-license.svg" alt="License & Developer: Open source under permissive MIT License © 2026" width="100%"></picture></h3>
+
+Local LLM is licensed under the permissive <strong><a href="LICENSE">MIT License</a></strong>.
+
+<div align="center">
+
+<a href="https://github.com/smartworldarafath">
+  <img src="https://github.com/smartworldarafath.png?size=140" width="90" height="90" style="border-radius: 50%; box-shadow: 0 4px 16px rgba(0,0,0,0.15);" alt="Arafath Rahman" />
+</a>
+
+<h4><strong>Arafath Rahman</strong> (<a href="https://github.com/smartworldarafath">@smartworldarafath</a>)</h4>
+<em>Creator, Lead Developer & Maintainer</em>
+
+<a href="https://img.shields.io/badge/Email-arafathrahman711%40gmail.com-blue?style=flat-square&logo=gmail">![Email</a>](mailto:arafathrahman711@gmail.com)
+<a href="https://img.shields.io/badge/GitHub-smartworldarafath-black?style=flat-square&logo=github">![GitHub</a>](https://github.com/smartworldarafath)
+<a href="https://img.shields.io/badge/Sponsor-SupportKori-green?style=flat-square">![Sponsor</a>](https://www.supportkori.com/arafathrahman)
+
+</div>
+
+<br>
+
+<div align="center">
+<sub>Local LLM • Your AI. Your Device. Your Privacy. • Built with Material 3 Expressive and llama.cpp</sub>
+</div>
+
+  </div>
+
+  <script>
+    const btn = document.getElementById('toggleTheme');
+    const html = document.documentElement;
+    btn.addEventListener('click', () => {
+      const current = html.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      btn.textContent = next === 'dark' ? 'Switch to Light Theme' : 'Switch to Dark Theme';
+    });
+  </script>
+</body>
+</html>
