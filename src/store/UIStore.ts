@@ -50,13 +50,15 @@ export class UIStore {
     saveHistoryMode: 'local' as 'local' | 'none',
   };
 
-  setUserProfile(profile: Partial<{
-    name: string;
-    email: string;
-    photo: string | null;
-    saveSettingsMode: 'local' | 'cloud';
-    saveHistoryMode: 'local' | 'none';
-  }>) {
+  setUserProfile(
+    profile: Partial<{
+      name: string;
+      email: string;
+      photo: string | null;
+      saveSettingsMode: 'local' | 'cloud';
+      saveHistoryMode: 'local' | 'none';
+    }>,
+  ) {
     runInAction(() => {
       this.userProfile = {
         ...this.userProfile,
